@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="topcoat/css/topcoat-mobile-light.min.css" class="uib-framework-theme">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+		<title>KLOK Tours</title>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<style type="text/css">
+			/* Prevent copy paste for all elements except text fields */
+			*  { -webkit-user-select:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0); }
+			input, textarea  { -webkit-user-select:text; }
+		</style>
+		<script src="intelxdk.js"></script>
+		<script type="text/javascript">
+			/* Intel native bridge is available */
+			var onDeviceReady=function(){
+			//hide splash screen
+			intel.xdk.device.hideSplashScreen();
+			};
+			document.addEventListener("intel.xdk.device.ready",onDeviceReady,false);
+		</script>
+		<script src="cordova.js"></script>
+	</head>
+
+	<body>
+		<!-- content goes here-->
+		<div class="uwrap">
+			<div class="upage" id="mainpage">
+				<div class="upage-outer">
+					<div class="upage-content" id="mainsub">
+
+						<div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
+							<div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
+								<div class="widget-container content-area vertical-col">
+
+									<div class="widget uib_w_1 scale-image d-margins" data-uib="media/img" data-ver="0">
+										<figure class="figure-align">
+											<img id="logo" src="img/klok2.png">
+											<figcaption data-position="bottom"></figcaption>
+										</figure>
+									</div>
+									<div class="widget uib_w_2 d-margins" data-uib="media/text" data-ver="0">
+										<div class="widget-container left-receptacle"></div>
+										<div class="widget-container right-receptacle"></div>
+										<div>
+											<p>KLOK is a combination of tour guide and a first aid assist. With it , we are trying to solve the problem we have in our tourism industry,that is, we want to give our tourists enough information and tips to survive the safari, straight from their smartphones. That is, how to react when you encounter a dangerous animal or an allergic/poisonous plant and also the first aid tips. </p>
+										</div>
+									</div>
+									<span class="uib_shim"></span>
+								</div>
+							</div>
+							<span class="uib_shim"></span>
+						</div>
+					</div>
+					<!-- /upage-content -->
+
+				</div>
+				<!-- /upage-outer -->
+
+			</div>
+			<!-- /upage -->
+
+		</div>
+		<!-- /uwrap -->
+	</body>
+
+</html>
